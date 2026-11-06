@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>☁️ CloudBuddy - AI Weather Assistant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Floating Background Elements -->
+    <div class="blob blob1"></div>
+    <div class="blob blob2"></div>
+    <div class="blob blob3"></div>
+
+    <div class="cloud cloud1">☁️</div>
+    <div class="cloud cloud2">☁️</div>
+    <div class="cloud cloud3">☁️</div>
+
+    <div class="bubble bubble1"></div>
+    <div class="bubble bubble2"></div>
+    <div class="bubble bubble3"></div>
+
+    <div class="container">
+
+        <!-- Header -->
+        <header class="header glass-card">
+
+            <div class="header-content">
+
+                <div class="title-section">
+
+                    <h1>☁️ CloudBuddy</h1>
+
+                    <p>
+                        Your Cozy AI Weather Assistant 🌸
+                    </p>
+
+                </div>
+
+                <div class="mascot">
+                    🧸
+                </div>
+
+            </div>
+
+        </header>
+
+        <!-- Search -->
+        <section class="search-section glass-card">
+
+            <input
+                type="text"
+                id="cityInput"
+                placeholder="Search your city..."
+            >
+
+            <button id="searchBtn">
+                ✨ Search
+            </button>
+
+        </section>
+
+        <!-- Top Grid -->
+        <div class="top-grid">
+
+            <!-- Current Weather -->
+            <section class="weather-card glass-card">
+
+                <h2>🌤 Current Weather</h2>
+
+                <div class="weather-main">
+
+                    <div id="weatherIcon">
+                        ☀️
+                    </div>
+
+                    <div>
+
+                        <h3 id="temperature">
+                            32°C
+                        </h3>
+
+                        <h4 id="cityName">
+                            Delhi
+                        </h4>
+
+                        <p id="condition">
+                            Sunny
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="weather-details">
+
+                    <div class="detail-box">
+                        <h4>💧 Humidity</h4>
+                        <p id="humidity">
+                            68%
+                        </p>
+                    </div>
+
+                    <div class="detail-box">
+                        <h4>🌬 Wind</h4>
+                        <p id="windSpeed">
+                            12 km/h
+                        </p>
+                    </div>
+
+                </div>
+
+            </section>
+
+            <!-- Forecast -->
+            <section class="forecast-card glass-card">
+
+                <h2>🌷 Forecast</h2>
+
+                <div id="forecastContainer">
+
+                    <!-- Forecast cards created by JavaScript -->
+
+                </div>
+
+            </section>
+
+        </div>
+
+        <!-- Middle Grid -->
+        <div class="middle-grid">
+
+            <!-- Mood -->
+            <section class="mood-card glass-card">
+
+                <h2>🌸 Mood Of The Day</h2>
+
+                <p id="moodMessage">
+
+                    CloudBuddy says:
+                    Have a beautiful and cozy day ☕✨
+
+                </p>
+
+            </section>
+
+            <!-- Quick Questions -->
+            <section class="questions-card glass-card">
+
+                <h2>✨ Quick Questions</h2>
+
+                <div class="quick-buttons">
+
+                    <button class="question-btn">
+                        🌂 Precautions
+                    </button>
+
+                    <button class="question-btn">
+                        👕 What Should I Wear?
+                    </button>
+
+                    <button class="question-btn">
+                        🚗 Travel Advice
+                    </button>
+
+                    <button class="question-btn">
+                        🌳 Outdoor Activities
+                    </button>
+
+                </div>
+
+            </section>
+
+        </div>
+
+        <!-- AI Chat -->
+        <section class="ai-card glass-card">
+
+            <h2>
+                🧸 Ask CloudBuddy
+            </h2>
+
+            <textarea
+                id="userQuestion"
+                rows="4"
+                placeholder="Ask anything about today's weather..."
+            ></textarea>
+
+            <button id="askAiBtn">
+
+                ✨ Ask AI
+
+            </button>
+
+            <div class="response-box">
+
+                <div class="teddy-peek">
+                    🧸
+                </div>
+
+                <h3>
+                    CloudBuddy's Response
+                </h3>
+
+                <p id="aiResponse">
+
+                    Hello! I'm CloudBuddy 🧸☁️
+
+                    Ask me anything about the weather and I'll help you with precautions, clothing suggestions, travel advice and more!
+
+                </p>
+
+            </div>
+
+        </section>
+
+        <!-- Footer -->
+        <footer>
+
+            <p>
+
+                Made with ☁️, 🌸 and ❤️ by Gurleen
+
+            </p>
+
+        </footer>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
